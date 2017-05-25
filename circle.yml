@@ -1,0 +1,27 @@
+version: 2
+jobs:
+  build:
+
+    working_directory: ~/circleci-store9
+
+    docker:
+      - image: openjdk:9-b170-jdk
+
+    steps:
+
+      - checkout
+
+      - restore_cache:
+          key: circleci-store9-{{ checksum "pom.xml" }}
+
+      - run: mvn dependency:go-offline
+
+      - save_cache:
+          paths:
+            - ~/.m2
+          key: circleci-store9-{{ checksum "pom.xml" }}
+
+      - run: mvn package
+
+      - store_test_results:
+          path: target/surefire-reports
