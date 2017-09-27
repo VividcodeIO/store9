@@ -1,7 +1,6 @@
 /**
  * Common API
  *
- * @moduleGraph
  */
 
 module io.vividcode.store.common {

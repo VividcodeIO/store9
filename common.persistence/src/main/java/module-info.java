@@ -1,7 +1,5 @@
 /**
  * Common persistence API
- *
- * @moduleGraph
  */
 
 module io.vividcode.store.common.persistence {

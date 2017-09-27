@@ -12,6 +12,7 @@
   <artifactId>filestore</artifactId>
 
   <properties>
+    <main.basedir>${basedir}/..</main.basedir>
     <module.name>io.vividcode.store.filestore</module.name>
   </properties>
 

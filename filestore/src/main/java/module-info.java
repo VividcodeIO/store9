@@ -1,3 +1,7 @@
+/**
+ * File-based storage
+ */
+
 import io.vividcode.store.filestore.FileStore;
 
 module io.vividcode.store.filestore {

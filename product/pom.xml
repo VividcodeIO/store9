@@ -12,6 +12,7 @@
   <artifactId>product</artifactId>
 
   <properties>
+    <main.basedir>${basedir}/..</main.basedir>
     <module.name>io.vividcode.store.product</module.name>
   </properties>
 

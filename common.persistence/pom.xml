@@ -12,6 +12,7 @@
   <artifactId>common.persistence</artifactId>
 
   <properties>
+    <main.basedir>${basedir}/..</main.basedir>
     <module.name>io.vividcode.store.common.persistence</module.name>
   </properties>
 
